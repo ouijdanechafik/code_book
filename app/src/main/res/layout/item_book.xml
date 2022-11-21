@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/dark_blue"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="4dp"
+    android:padding="8dp"
+    app:cardElevation="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imaga_book"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:layout_margin="8dp"
+            tools:src="@drawable/img2"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imaga_book"
+            tools:text="Rich dad poor dad"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:id="@+id/tvauthorHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvtitle"
+            android:layout_toEndOf="@+id/imaga_book"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Author:"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvtitle"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/tvauthorHint"
+            tools:text="Robert KIOSAKI" />
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvauthorHint"
+            android:layout_toEndOf="@id/imaga_book"
+            tools:rating="3"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:secondaryProgressTint="#FFC107"
+            android:progressTint="#FFC107"
+            />
+
+        <TextView
+            android:id="@+id/tvsummaray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="12sp"
+            android:layout_marginBottom="16dp"
+            android:layout_toEndOf="@id/imaga_book"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="A mini abridgement of the #1 Personal Finance book of all time, Wisdom from Rich Dad Poor Dad tells the story of Robert Kiyosaki and his two dads -- his real father and the father of his best friend, his rich dad -- and the ways in which both men shaped his thoughts about investing. You don't need to earn a high income to be rich -- find out the difference between working for money and having your money work for you.A mini abridgement of the #1 Personal Finance book of all time, Wisdom from Rich Dad Poor Dad tells the story of Robert Kiyosaki and his two dads -- his real father and the father of his best friend, his rich dad -- and the ways in which both men shaped his thoughts about investing. You don't need to earn a high income to be rich -- find out the difference between working for money and having your money work for you."
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tvsummaray"
+            android:layout_toEndOf="@id/imaga_book"
+            android:text="Summary"
+            android:textStyle="bold"
+            android:layout_marginRight="4dp"/>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
